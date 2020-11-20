@@ -50,6 +50,20 @@ const columns = [
       displayExpr: "type"
     }
   },
+  {
+    dataField: "dashStyle",
+    //editorType: DropDownBox,
+    lookup: {
+      dataSource: [
+        { type: "solid" },
+        { type: "dot" },
+        { type: "dash" },
+        { type: "longdash" }
+      ],
+      valueExpr: "type",
+      displayExpr: "type"
+    }
+  },
   "lineWidth",
   "min",
   "max"
