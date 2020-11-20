@@ -1,0 +1,32 @@
+{
+  "name": "graph-configurator-with-devextreme",
+  "description": "Users can modify DataGrid data cell by cell. In this mode, only one cell can be in the edit state at a time. DataGrid saves changes immediately after the focus leaves cell.\nTo enable the cell mode, do the following:\n\nSet the editing.mode to \"cell\".\nAssign true to the editing object's allowUpdating, allowAdding, and allowDeleting options.\n\nThis demo also shows how to delete selected records. Review the onSelectionChanged and deleteRecords functions for implementation details.\n",
+  "dependencies": {
+    "devexpress-diagram": "2.0.0",
+    "devexpress-gantt": "2.0.0",
+    "devextreme": "20.2.3",
+    "devextreme-quill": "0.9.5",
+    "devextreme-react": "20.2.3",
+    "es6-object-assign": "1.1.0",
+    "highcharts": "8.2.2",
+    "highcharts-react-official": "3.0.0",
+    "jszip": "3.5.0",
+    "luxon": "1.25.0",
+    "preact": "10.5.5",
+    "prop-types": "15.7.2",
+    "react": "16.14.0",
+    "react-dom": "17.0.1",
+    "rrule": "2.6.6"
+  },
+  "keywords": [],
+  "version": "0.0.20",
+  "devDependencies": {
+    "react-scripts": "1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -1,0 +1,11 @@
+#data-grid-demo {
+  /*min-height: 700px;*/
+}
+
+#gridContainer {
+  padding-top: 45px;
+}
+
+#gridDeleteSelected .dx-button-text {
+  line-height: 0;
+}
