@@ -9,6 +9,7 @@ import DataGrid, {
 } from "devextreme-react/data-grid";
 import { Button } from "devextreme-react/button";
 import ColorBox from "devextreme-react/color-box";
+import DropDownBox from "devextreme-react/drop-down-box";
 
 import ArrayStore from "devextreme/data/array_store";
 import DataSource from "devextreme/data/data_source";
@@ -34,7 +35,24 @@ const columns = [
     dataType: "color",
     editCellComponent: ColorBox
   },
-  "lineWidth"
+  //"type",
+  {
+    dataField: "type",
+    //editorType: DropDownBox,
+    lookup: {
+      dataSource: [
+        { type: "spline" },
+        { type: "line" },
+        { type: "scatter" },
+        { type: "bar" }
+      ],
+      valueExpr: "type",
+      displayExpr: "type"
+    }
+  },
+  "lineWidth",
+  "min",
+  "max"
 ];
 
 class App extends React.Component {
@@ -51,6 +69,7 @@ class App extends React.Component {
         },
         series: [
           {
+            type: "spline",
             name: "Series 1",
             color: "#ff0000",
             lineWidth: "5",
