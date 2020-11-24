@@ -86,8 +86,15 @@ class App extends React.Component {
             type: "spline",
             name: "Series 1",
             color: "#ff0000",
-            lineWidth: "5",
+            lineWidth: "2",
             data: [1, 2, 1, 4, 3, 6]
+          },
+          {
+            type: "line",
+            name: "Series 2",
+            color: "#00ff00",
+            lineWidth: "1",
+            data: [5, 1, 3, 8, 9, 12]
           }
         ]
       }
@@ -106,6 +113,7 @@ class App extends React.Component {
     return (
       <div>
         <div id="data-grid-demo">
+          <div>dataitemselector</div>
           <DataGrid
             id="gridContainer"
             dataSource={this.seriesConfig}
@@ -126,7 +134,7 @@ class App extends React.Component {
         <div>
           <Button
             id="updateChart"
-            text="Update Chart"
+            text="apply"
             height={34}
             onClick={this.updateChartSeries}
           />
